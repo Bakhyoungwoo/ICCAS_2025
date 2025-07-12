@@ -34,7 +34,9 @@ export default function Homepage() {
 
       {/* 하단 메뉴바 */}
       <View style={styles.bottomBar}>
-        <Text style={styles.bottomText}>탐험</Text>
+        <TouchableOpacity onPress={() => router.push('/Travel/TravelListPage')}>
+          <Text style={styles.bottomText}>탐험</Text>
+        </TouchableOpacity>
 
         <TouchableOpacity onPress={() => router.push('/Menu/Menupage')}>
           <Text style={styles.bottomText}>menu</Text>
