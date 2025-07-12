@@ -40,7 +40,9 @@ export default function Homepage() {
           <Text style={styles.bottomText}>menu</Text>
         </TouchableOpacity>
 
-        <Text style={styles.bottomText}>운동하기</Text>
+        <TouchableOpacity onPress={() => router.push('/Exercise/Explain')}>
+          <Text style={styles.bottomText}>운동하기</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
